@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eSkills4Jobs Class</title>
+    <!-- Added CSS styling -->
+    <link rel="stylesheet" href="/CSS/style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h1>School Management System</h1>
+        
+        <!-- Navigation Menu -->
+        <nav>
+            <ul>
+                <li><a href="#students">Students</a></li>
+                <li><a href="#teachers">Teachers</a></li>
+                <li><a href="#classes">Classes</a></li>
+                <li><a href="#attendance">Attendance</a></li>
+            </ul>
+        </nav>
+
+        <!-- Students Section -->
+        <div id="students" class="section">
+            <h2>Student Management</h2>
+            <button onclick="alert('Add Student clicked')">Add New Student</button>
+            <table border="1">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Class</th>
+                    <th>Actions</th>
+                </tr>
+                <tr>
+                    <td>001</td>
+                    <td>John Doe</td>
+                    <td>Class 10A</td>
+                    <td>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Teachers Section -->
+        <div id="teachers" class="section">
+            <h2>Teacher Management</h2>
+            <button onclick="alert('Add Teacher clicked')">Add New Teacher</button>
+            <table border="1">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Subject</th>
+                    <th>Actions</th>
+                </tr>
+                <tr>
+                    <td>T001</td>
+                    <td>Jane Smith</td>
+                    <td>Mathematics</td>
+                    <td>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+         <!-- Classes Section -->
+         <div id="classes" class="section">
+            <h2>Class Management</h2>
+            <button onclick="alert('Add Class clicked')">Add New Class</button>
+            <table border="1">
+                <tr>
+                    <th>Class ID</th>
+                    <th>Class Name</th>
+                    <th>Teacher</th>
+                    <th>Room</th>
+                    <th>Actions</th>
+                </tr>
+                <tr>
+                    <td>C001</td>
+                    <td>Class 10A</td>
+                    <td>Jane Smith</td>
+                    <td>Room 101</td>
+                    <td>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Attendance Section -->
+        <div id="attendance" class="section">
+            <h2>Attendance Management</h2>
+            <div class="form-group">
+                <label for="attendanceClass">Select Class:</label>
+                <select id="attendanceClass">
+                    <option value="">Choose Class</option>
+                    <option value="10A">Class 10A</option>
+                    <option value="10B">Class 10B</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="attendanceDate">Date:</label>
+                <input type="date" id="attendanceDate">
+            </div>
+            <table border="1">
+                <tr>
+                    <th>Student ID</th>
+                    <th>Student Name</th>
+                    <th>Status</th>
+                    <th>Remarks</th>
+                </tr>
+                <tr>
+                    <td>001</td>
+                    <td>John Doe</td>
+                    <td>
+                        <select>
+                            <option value="present">Present</option>
+                            <option value="absent">Absent</option>
+                            <option value="late">Late</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="Add remarks">
+                    </td>
+                </tr>
+            </table>
+            <button style="margin-top: 10px;">Save Attendance</button>
+        </div>
+
+        <!-- Grades Section -->
+        <div id="grades" class="section">
+            <h2>Grade Management</h2>
+            <div class="form-group">
+                <label for="gradeClass">Select Class:</label>
+                <select id="gradeClass">
+                    <option value="">Choose Class</option>
+                    <option value="10A">Class 10A</option>
+                    <option value="10B">Class 10B</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="subject">Select Subject:</label>
+                <select id="subject">
+                    <option value="">Choose Subject</option>
+                    <option value="math">Mathematics</option>
+                    <option value="science">Science</option>
+                    <option value="english">English</option>
+                </select>
+            </div>
+            <table border="1">
+                <tr>
+                    <th>Student ID</th>
+                    <th>Student Name</th>
+                    <th>Assignment Grade</th>
+                    <th>Test Grade</th>
+                    <th>Final Grade</th>
+                </tr>
+                <tr>
+                    <td>001</td>
+                    <td>Tom Hardy</td>
+                    <td><input type="number" min="0" max="100"></td>
+                    <td><input type="number" min="0" max="100"></td>
+                    <td><input type="number" min="0" max="100"></td>
+                </tr>
+            </table>
+            <button style="margin-top: 10px;">Save Grades</button>
+        </div>
+    </div>
+</body>
+</html> 
+       
