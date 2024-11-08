@@ -10,3 +10,5 @@ function toggleForms() {
             signupForm.style.display = 'block';
         }
     }
+
+    
